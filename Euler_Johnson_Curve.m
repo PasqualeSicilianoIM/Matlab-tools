@@ -16,7 +16,7 @@ function EulerJohnsonCurve(Sy,E,L,A,I,C)
 slenderness=linspace(0,10,240);
 r=I/A;
 crit_load_Euler=(E*pi^2)./(slenderness.^2); % Critical Load Euler's Formula
-crit_load=(((Sy^2)/(4*E*pi^2))*(slenderness.^2)); % Critical Load Johnson Parabola
+crit_load=(((Sy^2)/(4*E*pi^2))*(slenderness.^2)); % Critical Load Johnson's Parabola
 beam_slenderness=C*L*sqrt(A/I);
 crit_slenderness=sqrt((E*2*(pi^2))/Sy);
 disp("-----------------------------");
